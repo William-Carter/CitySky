@@ -595,6 +595,110 @@
         "name": "lazer.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "bigdrone1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"bigdrone1.png\",\"extension\":\".png\"}",
+        "name": "bigdrone1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "bigdrone2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"bigdrone2.png\",\"extension\":\".png\"}",
+        "name": "bigdrone2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "bigdrone3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"bigdrone3.png\",\"extension\":\".png\"}",
+        "name": "bigdrone3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "bigdrone4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"bigdrone4.png\",\"extension\":\".png\"}",
+        "name": "bigdrone4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Laser5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Laser5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Laser6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Laser6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Laser7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Laser7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Laser8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Laser8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Laser9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Laser9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Jitter4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Jitter4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Jitter5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Jitter5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Jitter6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Jitter6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Jitter7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Jitter7.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -695,7 +799,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.44485159988866724,
+        "zoomFactor": 0.2616774116992164,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -770,8 +874,8 @@
           "name": "RocketCount",
           "persistentUuid": "df209051-f4f2-4374-a761-048d9f07d8da",
           "width": 0,
-          "x": 18,
-          "y": 11,
+          "x": 1000,
+          "y": 917,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -851,9 +955,41 @@
           "name": "bigDrone",
           "persistentUuid": "35d0d357-3629-4a38-a795-777a130da626",
           "width": 0,
-          "x": -854,
-          "y": -76,
+          "x": -1146,
+          "y": -87,
           "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Distance",
+          "persistentUuid": "4add47ab-2608-4d0b-8173-9d0bbd33b972",
+          "width": 0,
+          "x": 960,
+          "y": 24,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "pickupProp",
+          "persistentUuid": "5e3073f2-9e41-4a1c-b79e-1e9c46aa46b3",
+          "width": 0,
+          "x": 885,
+          "y": 916,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -942,6 +1078,11 @@
               "name": "alive",
               "type": "boolean",
               "value": true
+            },
+            {
+              "name": "maxDistance",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -2819,7 +2960,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "big_drone",
+              "name": "bigdrone1",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -2829,7 +2970,172 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "big_drone.png",
+                      "image": "bigdrone1.png",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 750,
+                          "y": 650
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 650
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 43
+                          },
+                          {
+                            "x": 814,
+                            "y": 43
+                          },
+                          {
+                            "x": 814,
+                            "y": 1257
+                          },
+                          {
+                            "x": 0,
+                            "y": 1257
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bigdrone2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bigdrone2.png",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 750,
+                          "y": 650
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 650
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 43
+                          },
+                          {
+                            "x": 814,
+                            "y": 43
+                          },
+                          {
+                            "x": 814,
+                            "y": 1257
+                          },
+                          {
+                            "x": 0,
+                            "y": 1257
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bigdrone3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bigdrone3.png",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 750,
+                          "y": 650
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 650
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 43
+                          },
+                          {
+                            "x": 814,
+                            "y": 43
+                          },
+                          {
+                            "x": 814,
+                            "y": 1257
+                          },
+                          {
+                            "x": 0,
+                            "y": 1257
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bigdrone4",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bigdrone4.png",
                       "points": [
                         {
                           "name": "Point",
@@ -2891,47 +3197,437 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
+                  "looping": true,
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "lazer.png",
-                      "points": [
-                        {
-                          "name": "Start",
-                          "x": 0,
-                          "y": 650
-                        }
-                      ],
+                      "image": "Laser6.png",
+                      "points": [],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
-                        "y": 650
+                        "y": 250
                       },
                       "centerPoint": {
                         "automatic": false,
                         "name": "centre",
                         "x": 0,
-                        "y": 650
+                        "y": 250
                       },
                       "customCollisionMask": [
                         [
                           {
                             "x": 0,
-                            "y": 428
+                            "y": 84
                           },
                           {
-                            "x": 1920,
-                            "y": 428
+                            "x": 3840,
+                            "y": 84
                           },
                           {
-                            "x": 1920,
-                            "y": 872
+                            "x": 3840,
+                            "y": 418
                           },
                           {
                             "x": 0,
-                            "y": 872
+                            "y": 418
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Laser7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 84
+                          },
+                          {
+                            "x": 3840,
+                            "y": 84
+                          },
+                          {
+                            "x": 3840,
+                            "y": 418
+                          },
+                          {
+                            "x": 0,
+                            "y": 418
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Laser8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 84
+                          },
+                          {
+                            "x": 3840,
+                            "y": 84
+                          },
+                          {
+                            "x": 3840,
+                            "y": 418
+                          },
+                          {
+                            "x": 0,
+                            "y": 418
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Laser9.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 84
+                          },
+                          {
+                            "x": 3840,
+                            "y": 84
+                          },
+                          {
+                            "x": 3840,
+                            "y": 418
+                          },
+                          {
+                            "x": 0,
+                            "y": 418
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Jitter",
+          "persistentUuid": "e01bc280-dd6f-4d05-9743-becf6dde2d52",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Jitter5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 20
+                          },
+                          {
+                            "x": 3840,
+                            "y": 20
+                          },
+                          {
+                            "x": 3840,
+                            "y": 482
+                          },
+                          {
+                            "x": 0,
+                            "y": 482
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Jitter6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 20
+                          },
+                          {
+                            "x": 3840,
+                            "y": 20
+                          },
+                          {
+                            "x": 3840,
+                            "y": 482
+                          },
+                          {
+                            "x": 0,
+                            "y": 482
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Jitter7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 250
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 20
+                          },
+                          {
+                            "x": 3840,
+                            "y": 20
+                          },
+                          {
+                            "x": 3840,
+                            "y": 482
+                          },
+                          {
+                            "x": 0,
+                            "y": 482
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Distance",
+          "persistentUuid": "7cc84b13-3b69-4918-8d5c-7e94d98027fb",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 120,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 120,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "pickupProp",
+          "persistentUuid": "a0234a59-f8d2-4adc-a8d1-09c5fbda8f3d",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "single",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "powerpack.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 25,
+                            "y": 0
+                          },
+                          {
+                            "x": 97,
+                            "y": 0
+                          },
+                          {
+                            "x": 97,
+                            "y": 114
+                          },
+                          {
+                            "x": 25,
+                            "y": 114
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "double",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "doublepowerpack.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 25,
+                            "y": 0
+                          },
+                          {
+                            "x": 97,
+                            "y": 0
+                          },
+                          {
+                            "x": 97,
+                            "y": 114
+                          },
+                          {
+                            "x": 25,
+                            "y": 114
                           }
                         ]
                       ]
@@ -2995,6 +3691,9 @@
             "objectName": "rocketPickup"
           },
           {
+            "objectName": "pickupProp"
+          },
+          {
             "objectName": "playerVisual"
           },
           {
@@ -3011,6 +3710,12 @@
           },
           {
             "objectName": "laser"
+          },
+          {
+            "objectName": "Jitter"
+          },
+          {
+            "objectName": "Distance"
           }
         ]
       },
@@ -3077,7 +3782,29 @@
               "parameters": [
                 "",
                 "0.5",
+                "\"laser\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "0.5",
                 "\"Facades\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "0.5",
+                "\"laserNoise\"",
                 ""
               ]
             },
@@ -3184,6 +3911,94 @@
                 "",
                 "\"boss\""
               ]
+            },
+            {
+              "type": {
+                "value": "LoadObjectAssets"
+              },
+              "parameters": [
+                "",
+                "\"laser\""
+              ]
+            },
+            {
+              "type": {
+                "value": "LoadObjectAssets"
+              },
+              "parameters": [
+                "",
+                "\"jitter\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "UI"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "RocketCount",
+                "Text",
+                "=",
+                "player.rocketCount"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Distance",
+                "Text",
+                "=",
+                "ToString(round(player.maxDistance/100))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Distance",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "RocketCount",
+                "=",
+                "SceneWindowWidth()/2+50"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "pickupProp",
+                "=",
+                "SceneWindowWidth()/2-50"
+              ]
             }
           ]
         },
@@ -3220,18 +4035,7 @@
               "parameters": [
                 "bigDrone",
                 "=",
-                "minimumScreenX-2000"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "RocketCount",
-                "Text",
-                "=",
-                "bigDrone.state"
+                "minimumScreenX-1900"
               ]
             }
           ],
@@ -3283,7 +4087,7 @@
                   "parameters": [
                     "minimumScreenX",
                     "=",
-                    "max(minimumScreenX, player.CenterX()-2000)"
+                    "max(minimumScreenX, player.CenterX()-1500)"
                   ]
                 },
                 {
@@ -3362,7 +4166,7 @@
                   "parameters": [
                     "minimumScreenX",
                     "=",
-                    "max(minimumScreenX, player.CenterX()-2000)"
+                    "max(minimumScreenX, player.CenterX()-1500)"
                   ]
                 },
                 {
@@ -3397,7 +4201,7 @@
                       "parameters": [
                         "minimumScreenX",
                         ">=",
-                        "player.CenterX()+500"
+                        "player.CenterX()"
                       ]
                     }
                   ],
@@ -3449,7 +4253,7 @@
                   "parameters": [
                     "minimumScreenX",
                     "=",
-                    "max(minimumScreenX, player.CenterX()+500)"
+                    "max(minimumScreenX, player.CenterX())"
                   ]
                 },
                 {
@@ -3548,7 +4352,7 @@
                   "parameters": [
                     "minimumScreenX",
                     "=",
-                    "max(minimumScreenX, player.CenterX()+500)"
+                    "max(minimumScreenX, player.CenterX())"
                   ]
                 },
                 {
@@ -3584,7 +4388,94 @@
                         "bigDrone",
                         "\"charge\"",
                         ">",
-                        "2"
+                        "0.75"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "bigDrone",
+                        "Animation",
+                        "=",
+                        "\"bigdrone2\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "bigDrone",
+                        "\"charge\"",
+                        ">",
+                        "1.5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "bigDrone",
+                        "Animation",
+                        "=",
+                        "\"bigdrone3\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "bigDrone",
+                        "\"charge\"",
+                        ">",
+                        "2.25"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "bigDrone",
+                        "Animation",
+                        "=",
+                        "\"bigdrone4\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "bigDrone",
+                        "\"charge\"",
+                        ">",
+                        "3"
                       ]
                     }
                   ],
@@ -3598,7 +4489,19 @@
                         "laser",
                         "bigDrone.PointX(\"Point\")",
                         "bigDrone.PointY(\"Point\")",
-                        "\"behindPlayer\""
+                        "\"laser\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Jitter",
+                        "bigDrone.PointX(\"Point\")",
+                        "bigDrone.PointY(\"Point\")",
+                        "\"laserNoise\""
                       ]
                     },
                     {
@@ -3659,7 +4562,7 @@
                   "parameters": [
                     "minimumScreenX",
                     "=",
-                    "max(minimumScreenX, player.CenterX()+500)"
+                    "max(minimumScreenX, player.CenterX())"
                   ]
                 },
                 {
@@ -3688,6 +4591,16 @@
                   },
                   "parameters": [
                     "laser",
+                    "=",
+                    "bigDrone.PointX(\"Point\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "Jitter",
                     "=",
                     "bigDrone.PointX(\"Point\")"
                   ]
@@ -3721,6 +4634,15 @@
                     },
                     {
                       "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Jitter",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "SetStringObjectVariable"
                       },
                       "parameters": [
@@ -3728,6 +4650,17 @@
                         "state",
                         "=",
                         "\"chase\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "bigDrone",
+                        "Animation",
+                        "=",
+                        "\"bigdrone1\""
                       ]
                     }
                   ],
@@ -3848,67 +4781,6 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "player",
-                "<",
-                "minimumScreenX-1000"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "alive",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "laser",
-                "bigDrone.PointX(\"Point\")",
-                "bigDrone.PointY(\"Point\")",
-                "\"behindPlayer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "laser",
-                "=",
-                "bigDrone.Angle()"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "player",
-                "alive",
-                "False",
-                ""
-              ]
-            }
-          ]
-        },
-        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -3947,7 +4819,7 @@
                   "parameters": [
                     "chunkId",
                     "=",
-                    "RandomInRange(3,3)"
+                    "RandomInRange(1,3)"
                   ]
                 },
                 {
@@ -4515,6 +5387,58 @@
                         ""
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "drone",
+                    "laser",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "explosion",
+                    "drone.X()",
+                    "drone.Y()",
+                    "\"behindPlayer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "drone",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Explosion.wav",
+                    "",
+                    "60",
+                    ""
                   ]
                 }
               ]
@@ -5492,6 +6416,23 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "maxDistance",
+                    "=",
+                    "max(player.maxDistance, player.X()-127)"
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -6296,7 +7237,7 @@
               "parameters": [
                 "",
                 "=",
-                "max(player.CenterX()+500, minimumScreenX)",
+                "max(player.CenterX(), minimumScreenX)",
                 "",
                 ""
               ]
@@ -6320,7 +7261,55 @@
               "parameters": [
                 "",
                 "=",
-                "max(player.CenterX()+500, minimumScreenX)",
+                "max(player.CenterX(), minimumScreenX)",
+                "\"laser\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "cameraY+zoomLevel",
+                "\"laser\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "max(player.CenterX(), minimumScreenX)",
+                "\"laserNoise\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "cameraY+zoomLevel",
+                "\"laserNoise\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "max(player.CenterX(), minimumScreenX)",
                 "\"Facades\"",
                 ""
               ]
@@ -6344,7 +7333,7 @@
               "parameters": [
                 "",
                 "=",
-                "max(player.CenterX()+500, minimumScreenX)",
+                "max(player.CenterX(), minimumScreenX)",
                 "\"behindPlayer\"",
                 ""
               ]
@@ -6595,6 +7584,114 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
+          "name": "laser",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "laserNoise",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
           "name": "behindPlayer",
           "renderingType": "",
           "visibility": true,
@@ -6680,7 +7777,7 @@
           "isLocked": false,
           "name": "Blackout",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
