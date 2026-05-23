@@ -909,6 +909,14 @@
         "name": "ppbnw.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "inside.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"inside.png\",\"extension\":\".png\"}",
+        "name": "inside.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -4411,6 +4419,68 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "inside",
+          "persistentUuid": "c4b060fd-95e3-4255-894e-4d4dddf23817",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "inside",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "inside.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1000,
+                            "y": 0
+                          },
+                          {
+                            "x": 1000,
+                            "y": 1000
+                          },
+                          {
+                            "x": 0,
+                            "y": 1000
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -4502,6 +4572,9 @@
           },
           {
             "objectName": "deathmessage"
+          },
+          {
+            "objectName": "inside"
           }
         ]
       },
@@ -4707,7 +4780,7 @@
                 "roth.mp3",
                 "67",
                 "yes",
-                "60",
+                "30",
                 ""
               ]
             },
@@ -13207,9 +13280,9 @@
           "layer": "",
           "name": "platform",
           "persistentUuid": "b8e02b7e-066e-4cfe-874c-5e8704ecf4f0",
-          "width": 932,
-          "x": 2631,
-          "y": -353,
+          "width": 1090,
+          "x": 2473,
+          "y": -354,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -13243,7 +13316,7 @@
           "persistentUuid": "fc2d7b7a-93d7-49d5-bc38-69466a4cbf43",
           "width": 932,
           "x": 3521,
-          "y": -352,
+          "y": -354,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -13683,6 +13756,38 @@
           ],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Facades",
+          "name": "inside",
+          "persistentUuid": "c6e6f7ff-2ac7-43bb-82f7-6b3776ede0d4",
+          "width": 0,
+          "x": 2473,
+          "y": -382,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Facades",
+          "name": "inside",
+          "persistentUuid": "a3477679-b5bc-40cf-b2e4-1cc48ffc9365",
+          "width": 0,
+          "x": 3453,
+          "y": -333,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -13697,7 +13802,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.19415059112741206,
+        "zoomFactor": 0.28905162031349907,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
